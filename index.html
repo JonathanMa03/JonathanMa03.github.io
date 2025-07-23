@@ -11,7 +11,37 @@
       background-color: #0a1f44;
       color: white;
       text-align: center;
-      padding-bottom: 100px; /* space for nav */
+      padding-top: 60px; /* space for fixed top nav */
+      padding-bottom: 100px; /* space for bottom nav */
+    }
+
+    .top-nav {
+      background-color: #000000;
+      padding: 14px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+      border-bottom: 1px solid #444;
+    }
+
+    .top-nav a {
+      color: #cbd6f6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1em;
+      transition: color 0.2s ease;
+    }
+
+    .top-nav a:hover {
+      color: #ffffff;
+    }
+
+    .top-nav a.active {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: underline;
     }
 
     .container {
@@ -73,6 +103,17 @@
   </style>
 </head>
 <body>
+
+  <!-- Top Navigation Bar -->
+  <div class="top-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
   <div class="container">
     <img src="me.jpg" alt="Jonathan Y. Ma" class="profile" />
     <h1>Jonathan Y. Ma</h1>
@@ -80,15 +121,17 @@
     <p>
       I’m a Finance and Economics graduate with a strong foundation in Applied Mathematics, currently pursuing a Master’s in Engineering at Johns Hopkins. My work bridges Industrial Engineering, Statistics, and OR, focused on solving real-world problems through data, modeling, and optimization. Whether it’s analyzing financial sentiment or streamlining complex systems, I thrive on turning analytical insight into impactful strategy.
     </p>
-     <p>
+    <p>
       Interests: Financial Modeling, Statistical Modeling and Simulation, Econometrics, Inventory Tracking
     </p>
   </div>
 
+  <!-- Bottom External Links -->
   <div class="bottom-nav">
     <a href="https://github.com/JonathanMa03" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/jonathanma217/" target="_blank">LinkedIn</a>
     <a href="https://docs.google.com/document/d/1DJE0K8YW557yiEXnC6714HlwsYG4mzd9/edit?usp=sharing" target="_blank">Resume</a>
   </div>
+
 </body>
 </html>
