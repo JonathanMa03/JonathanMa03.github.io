@@ -2,82 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jonathan Y. Ma</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
+      font-family: "Times New Roman", serif;
+      background-color: #0a1f44;
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding-bottom: 100px; /* space for nav */
     }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-    }
-    main {
+
+    .container {
       max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    .links a {
-      display: inline-block;
-      margin: 0.5rem 1rem 0.5rem 0;
-      color: #0066cc;
+
+    img.profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.2em;
+      color: #cbd6f6;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      margin: 0 auto 30px;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #081a38;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      border-top: 1px solid #444;
+    }
+
+    .bottom-nav a {
+      color: #cbd6f6;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.2s ease;
     }
-    .links a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
+
+    .bottom-nav a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
+    <img src="me.jpeg" alt="Jonathan Y. Ma" class="profile" />
     <h1>Jonathan Y. Ma</h1>
-    <h2>Data-Driven Problem Solver</h2>
-    <p>Finance & Economics | Industrial Engineering • Applied Statistics • Operations Research</p>
-    <img src="me.jpg" alt="Jonathan Y. Ma">
-  </header>
+    <h2>Data-Driven Problem Solver | Finance & Economics | Industrial Engineering • Applied Statistics • Operations Research</h2>
+    <p>
+      I’m a finance and economics graduate with a strong foundation in applied mathematics, currently pursuing a Master’s in Engineering at Johns Hopkins. My work bridges industrial engineering, statistics, and operations research, focused on solving real-world problems through data, modeling, and optimization. Whether it’s analyzing financial sentiment or streamlining complex systems, I thrive on turning analytical insight into impactful strategy.
+    </p>
+  </div>
 
-  <main>
-    <section>
-      <h3>About Me</h3>
-      <p>
-        I’m a finance and economics graduate with a strong foundation in applied mathematics, currently pursuing a Master’s in Engineering at Johns Hopkins. 
-        My work bridges industrial engineering, statistics, and operations research, focused on solving real-world problems through data, modeling, and optimization. 
-        Whether it’s analyzing financial sentiment or streamlining complex systems, I thrive on turning analytical insight into impactful strategy.
-      </p>
-    </section>
-
-    <section class="links">
-      <h3>Links</h3>
-      <a href="https://github.com/JonathanMa03" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/jonathanma217/" target="_blank">LinkedIn</a>
-      <a href="https://docs.google.com/document/d/1DJE0K8YW557yiEXnC6714HlwsYG4mzd9/edit?usp=sharing&ouid=103287810301603708658&rtpof=true&sd=true" target="_blank">Resume</a>
-    </section>
-  </main>
-
-  <footer>
-    © 2025 Jonathan Y. Ma
-  </footer>
-
+  <div class="bottom-nav">
+    <a href="https://github.com/JonathanMa03" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/jonathanma217/" target="_blank">LinkedIn</a>
+    <a href="https://docs.google.com/document/d/1DJE0K8YW557yiEXnC6714HlwsYG4mzd9/edit?usp=sharing" target="_blank">Resume</a>
+  </div>
 </body>
 </html>
