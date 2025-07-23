@@ -2,68 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me - Jonathan Y. Ma</title>
-  
-<style>
-  body {
-    margin: 0;
-    font-family: "Times New Roman", serif;
-    background-color: #0a1f44;
-    color: white;
-    padding-top: 60px;
-    text-align: center;
-  }
+  <title>About - Jonathan Y. Ma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background-color: #0a1f44;
+      color: white;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      text-align: center;
+    }
 
-  .top-nav {
-    background-color: #000000;
-    padding: 14px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-    border-bottom: 1px solid #444;
-  }
+    .top-nav {
+      background-color: #000000;
+      padding: 14px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+      border-bottom: 1px solid #444;
+    }
 
-  .top-nav a {
-    color: #cbd6f6;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 1em;
-    transition: color 0.2s ease;
-  }
+    .top-nav a {
+      color: #cbd6f6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1em;
+      transition: color 0.2s ease;
+    }
 
-  .top-nav a:hover {
-    color: #ffffff;
-  }
+    .top-nav a:hover {
+      color: #ffffff;
+    }
 
-  .top-nav a.active {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+    .top-nav a.active {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-</style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: left;
+    }
 
+    h1, h2 {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+  </style>
 </head>
 <body>
-  
-<div class="top-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="resume.html">Resume</a>
-  <a href="contact.html">Contact</a>
-</div>
+  <!-- Top Navigation -->
+  <div class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
+  <!-- Page Content -->
   <div class="container">
     <h1>About Me</h1>
-    <p>This page is under construction. Check back soon!</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li>B.S. Finance, B.A. Economics, Minor in Statistics – Rutgers University</li>
+      <li>M.S.E. Applied Mathematics and Statistics – Whiting School of Engineering, Johns Hopkins</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Bloomberg Terminal</li>
+      <li>R: e1071, dplyr, tidyverse, CARET, gptstudio, lavaan, ggplot</li>
+      <li>Python: sklearn, scipy, pandas, sqlite3, tensorflow, plotly, dash, bs4, selenium, neuralforecast</li>
+      <li>Julia</li>
+    </ul>
+
+    <h2>Career Goals & Interests</h2>
+    <p>
+      I aim to work at the intersection of quantitative finance, data science, and systems engineering.
+      My background spans both business and technical domains, and I’m passionate about using math, modeling,
+      and analytics to improve real-world decision-making. Whether it’s financial optimization or predictive
+      systems modeling, I enjoy building strategies that are both elegant and practical.
+    </p>
+
+    <h2>Fun Facts</h2>
+    <p>
+      I play the piano and love performing whenever there’s a space available — whether it's a concert hall or ont he streets of NY!
+    </p>
   </div>
 </body>
 </html>
